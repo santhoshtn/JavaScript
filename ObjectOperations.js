@@ -27,7 +27,8 @@ Object.keys(Team).forEach(function(item) {
 Object.keys(Programmer).forEach(function(item) {
     delete(Programmer[item].occupation);
 });
- var result={};
+ var result=new Object;
+// result.TeamLeader=Team;
  result['Team Leader']=Team;
  result['Programmer']=Programmer;
 console.log(result);
